@@ -1,0 +1,7 @@
+---
+nginx_pkg: nginx
+nginx_service: nginx
+web_root: /var/www/html
+nginx_user: www-data
+nginx_group: www-data
+nginx_port: 7000

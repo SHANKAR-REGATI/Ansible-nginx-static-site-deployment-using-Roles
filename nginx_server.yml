@@ -1,0 +1,7 @@
+---
+- name: Install Nginx and Congigure with custom templete and deploy static website
+  hosts: web_server
+  become: yes
+
+  roles:
+    - nginx_server
