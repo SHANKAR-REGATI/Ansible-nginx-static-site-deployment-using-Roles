@@ -4,7 +4,6 @@
   deploys a custom Nginx server block, and hosts a static website on an EC2 instance.
   ## - Tech Stack
   - Ansible
-  - Nginx
   - Linux (Ubuntu)
   - AWS EC2
   - YAML, Jinja2
