@@ -11,7 +11,7 @@
 
 - name: Configure Nginx with Custom templete
   ansible.builtin.template:
-    src: ~/Ansible_Projects/nginx_server/templates/nginx.conf.j2
+    src: ~/Ansible-nginx-static-site-deployment-using-Roles/nginx_server/templates/nginx.conf.j2
     dest: /etc/nginx/sites-available/nginx.conf.j2
   notify: Restart nginx
 
@@ -24,7 +24,7 @@
 
 - name: Deploy Static Website
   ansible.builtin.copy:
-    src: ~/Ansible_Projects/nginx_server/files/index.html
+    src: ~/Ansible-nginx-static-site-deployment-using-Roles/nginx_server/files/index.html
     dest: "{{ web_root }}/index.html"
     owner: "{{ nginx_user }}"
     group: "{{ nginx_group }}"
